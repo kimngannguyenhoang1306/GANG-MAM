@@ -1,0 +1,146 @@
+  bash arg: -p
+  bash arg: com.standardnotes
+  bash arg: -s
+  bash arg: 200
+  bash arg: --throttle
+  bash arg: 100
+  bash arg: --kill-process-after-error
+  bash arg: --monitor-native-crashes
+  bash arg: -v
+  bash arg: 500
+:Monkey: seed=200 count=500
+:AllowPackage: com.standardnotes
+:IncludeCategory: android.intent.category.LAUNCHER
+:IncludeCategory: android.intent.category.MONKEY
+// Event percentages:
+//   0: 15.0%
+//   1: 10.0%
+//   2: 2.0%
+//   3: 15.0%
+//   4: -0.0%
+//   5: -0.0%
+//   6: 25.0%
+//   7: 15.0%
+//   8: 2.0%
+//   9: 2.0%
+//   10: 1.0%
+//   11: 13.0%
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.standardnotes/.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.standardnotes/.MainActivity } in package com.standardnotes
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.standardnotes/.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.standardnotes/.MainActivity } in package com.standardnotes
+:Sending Touch (ACTION_DOWN): 0:(1019.0,604.0)
+:Sending Touch (ACTION_UP): 0:(1015.2503,596.554)
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] cmp=com.android.launcher3/.uioverrides.QuickstepLauncher } in package com.android.launcher3
+:Sending Touch (ACTION_DOWN): 0:(489.0,1380.0)
+:Sending Touch (ACTION_UP): 0:(483.4167,1388.8425)
+:Sending Touch (ACTION_DOWN): 0:(112.0,472.0)
+:Sending Touch (ACTION_UP): 0:(69.38241,539.63324)
+:Sending Touch (ACTION_DOWN): 0:(123.0,45.0)
+:Sending Touch (ACTION_UP): 0:(119.66657,27.63131)
+:Sending Touch (ACTION_DOWN): 0:(24.0,888.0)
+:Sending Touch (ACTION_UP): 0:(13.513822,905.78253)
+:Sending Touch (ACTION_DOWN): 0:(665.0,1247.0)
+:Sending Touch (ACTION_UP): 0:(609.3815,1236.7614)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-4.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(877.0,336.0)
+:Sending Touch (ACTION_UP): 0:(936.127,238.4049)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-4.0)
+    //[calendar_time:2021-11-12 21:05:20.101  system_uptime:1676427]
+    // Sending event #100
+    //[calendar_time:2021-11-12 21:05:20.332  system_uptime:1676656]
+    // Sending event #100
+:Sending Touch (ACTION_DOWN): 0:(219.0,1422.0)
+:Sending Touch (ACTION_UP): 0:(216.94688,1452.9606)
+    // Rejecting start of Intent { act=android.intent.action.VIEW dat=https://standardnotes.com/... cmp=org.chromium.webview_shell/.WebViewBrowserActivity } in package org.chromium.webview_shell
+:Sending Touch (ACTION_DOWN): 0:(272.0,910.0)
+:Sending Touch (ACTION_UP): 0:(270.72324,912.60126)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,1.0)
+:Sending Touch (ACTION_DOWN): 0:(305.0,1521.0)
+:Sending Touch (ACTION_UP): 0:(293.78757,1515.0483)
+    // Rejecting start of Intent { act=android.intent.action.VIEW dat=https://standardnotes.com/... cmp=org.chromium.webview_shell/.WebViewBrowserActivity } in package org.chromium.webview_shell
+:Sending Touch (ACTION_DOWN): 0:(805.0,312.0)
+:Sending Touch (ACTION_UP): 0:(804.7942,305.32147)
+:Sending Touch (ACTION_DOWN): 0:(1042.0,1487.0)
+:Sending Touch (ACTION_UP): 0:(1045.1658,1488.128)
+:Sending Touch (ACTION_DOWN): 0:(1054.0,1177.0)
+:Sending Touch (ACTION_UP): 0:(1049.6912,1185.22)
+:Sending Touch (ACTION_DOWN): 0:(926.0,1834.0)
+:Sending Touch (ACTION_UP): 0:(942.8761,1839.2406)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-5.0)
+    //[calendar_time:2021-11-12 21:05:24.379  system_uptime:1680703]
+    // Sending event #200
+:Sending Trackball (ACTION_MOVE): 0:(2.0,3.0)
+:Sending Touch (ACTION_DOWN): 0:(1052.0,1998.0)
+:Sending Touch (ACTION_UP): 0:(1049.1918,1987.2881)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,4.0)
+:Sending Touch (ACTION_DOWN): 0:(1068.0,389.0)
+:Sending Touch (ACTION_UP): 0:(1080.0,476.59378)
+:Sending Touch (ACTION_DOWN): 0:(446.0,570.0)
+:Sending Touch (ACTION_UP): 0:(445.4827,570.6234)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(899.0,1952.0)
+:Sending Touch (ACTION_UP): 0:(915.73535,1895.8093)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.standardnotes/.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.standardnotes/.MainActivity } in package com.standardnotes
+:Sending Flip keyboardOpen=false
+Got IOException performing flipjava.io.FileNotFoundException: /dev/input/event0: open failed: EACCES (Permission denied)
+    // Injection Failed
+:Sending Touch (ACTION_DOWN): 0:(491.0,1996.0)
+:Sending Touch (ACTION_UP): 0:(491.7601,1995.8198)
+    //[calendar_time:2021-11-12 21:05:28.204  system_uptime:1684527]
+    // Sending event #300
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,3.0)
+:Sending Touch (ACTION_DOWN): 0:(842.0,203.0)
+:Sending Touch (ACTION_UP): 0:(922.6481,216.86072)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.standardnotes/.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.standardnotes/.MainActivity } in package com.standardnotes
+:Sending Touch (ACTION_DOWN): 0:(152.0,24.0)
+:Sending Touch (ACTION_UP): 0:(150.03653,7.0061684)
+:Sending Touch (ACTION_DOWN): 0:(579.0,1753.0)
+:Sending Touch (ACTION_UP): 0:(564.79675,1729.411)
+:Sending Touch (ACTION_DOWN): 0:(341.0,962.0)
+:Sending Touch (ACTION_UP): 0:(341.5937,964.6673)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,3.0)
+    // Rejecting start of Intent { act=android.intent.action.CALL_BUTTON cmp=com.android.dialer/.main.impl.MainActivity } in package com.android.dialer
+:Sending Touch (ACTION_DOWN): 0:(364.0,755.0)
+:Sending Touch (ACTION_UP): 0:(414.69376,664.811)
+:Sending Touch (ACTION_DOWN): 0:(371.0,522.0)
+:Sending Touch (ACTION_UP): 0:(351.9504,552.0876)
+    //[calendar_time:2021-11-12 21:05:30.908  system_uptime:1687232]
+    // Sending event #400
+:Sending Touch (ACTION_DOWN): 0:(539.0,1699.0)
+:Sending Touch (ACTION_UP): 0:(548.20154,1718.505)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,4.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(404.0,301.0)
+:Sending Touch (ACTION_UP): 0:(389.91684,301.4405)
+:Sending Touch (ACTION_DOWN): 0:(368.0,314.0)
+:Sending Touch (ACTION_UP): 0:(378.02203,296.49292)
+:Sending Touch (ACTION_DOWN): 0:(921.0,78.0)
+:Sending Touch (ACTION_UP): 0:(839.5431,0.0)
+:Sending Touch (ACTION_DOWN): 0:(720.0,2079.0)
+:Sending Touch (ACTION_UP): 0:(720.5921,2098.3494)
+:Sending Touch (ACTION_DOWN): 0:(471.0,2102.0)
+:Sending Touch (ACTION_UP): 0:(459.70193,2094.8665)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.standardnotes/.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.standardnotes/.MainActivity } in package com.standardnotes
+:Sending Touch (ACTION_DOWN): 0:(611.0,634.0)
+:Sending Touch (ACTION_UP): 0:(616.05273,612.6997)
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] cmp=com.android.launcher3/.uioverrides.QuickstepLauncher } in package com.android.launcher3
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(1010.0,231.0)
+:Sending Touch (ACTION_UP): 0:(1020.56226,238.71916)
+Events injected: 500
+:Sending rotation degree=0, persist=false
+:Dropped: keys=0 pointers=0 trackballs=0 flips=1 rotations=0
+## Network stats: elapsed time=18078ms (0ms mobile, 0ms wifi, 18078ms not connected)
+// Monkey finished
