@@ -1,4 +1,4 @@
-Modify Android Malware apk files based on GAN engine. Originam Project: https://github.com/papersubKS/GANG-MAM_ReleaseV1.0-
+Modify Android Malware apk files based on GAN engine. Original Project: https://github.com/papersubKS/GANG-MAM_ReleaseV1.0-
 <br>
 Using python project: GANG-MAM.
 <br>
