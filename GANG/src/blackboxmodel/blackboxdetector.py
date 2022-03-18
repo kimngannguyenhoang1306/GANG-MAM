@@ -56,7 +56,7 @@ def predict(genVector):
     result = [(resultSvm[i] or resultRf[i] or resultXgBoost[i] or resultLr[i] or resultDt[i] or resultCnn[i] ) for i in range(len(resultSvm))]
     return (numpy.array(result))
 
-
+count = 0
 #score/accuracy calculation
 def score(genVector, vectorLabel):
     #loading model
@@ -92,9 +92,23 @@ def score(genVector, vectorLabel):
     resultCnn =np.argmax(resultCnn_ , axis=1)
 
     result = [(resultSvm[i] or resultRf[i] or resultXgBoost[i] or resultLr[i] or resultDt[i] or resultCnn[i])  for i in range(len(resultSvm))]
+    print("resultSvm", resultSvm)
+    print("resultRf", resultRf)
+    print("resultXgBoost", resultXgBoost)
+    print("resultLr", resultLr)
+    print("resultDt", resultDt)
+    print("resultCnn", resultCnn)
 
-    result = numpy.array(result )
+    result = numpy.array(result)
+    print("predictResult", result)
+    
     cs = accuracy_score(result , vectorLabel)
+    print("vectorLabel", vectorLabel)
+    print("ahihi", cs)
+    
+    global count
+    count +=1
+    print (count)
     return (cs)
     
 #train

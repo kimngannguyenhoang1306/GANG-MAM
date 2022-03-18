@@ -77,10 +77,13 @@ class Gan():
                 xmal_test = df_test
                 ymal_test = np.ones(df_test.shape[0])
             #extracting feature names
+            
             featureList_test = list(xmal_test.columns.values)
             xmal_test  = xmal_test.values
             input_test_score = self.blackbox_detector.score(xmal_test, ymal_test.values)
+            #self.blackbox_detector.fit(xmal_test, ymal_test.values)
             #modifying features
+
             for index_df in range(df_test.shape[0]): 
                 TPR = 1
                 loopLimit = 100

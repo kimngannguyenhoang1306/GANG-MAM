@@ -47,7 +47,7 @@ EMULATOR_LAUNCH_CMD = "emulator -avd "
 EMULATOR_CLOSE_CMD  = "adb emu kill"
 PACKAGE_LAUNCH_COMMAND = "adb shell monkey -p "
 MONKEY_CMD_PARAMS = " -s 200 --throttle 100 --kill-process-after-error --monitor-native-crashes -v 500"
-EMULATOR_LAUNCH_SLEEP = 90
+EMULATOR_LAUNCH_SLEEP = 180
 
 package_name_command = 'aapt dump badging ## | grep \'package\|^launchable-activity\' | cut -d \' \' -f 2 | head -n 1'
 
@@ -108,7 +108,7 @@ def parse_csv():
     #kill_server = run_command("adb kill-server")
     launch_emulator()
     #start_server = run_command("adb start-server")
-    sleep(5)
+    sleep(20)
 
     log(f"\n{total_apk_found} APK(s) found in Input apk folder", 1)
 
@@ -131,10 +131,10 @@ def parse_csv():
             # Command to get package name of the app from its apk.
             pkg_name = get_package_name(INPUT_APK_FOLDER + apk_file)
             if pkg_name:
-                log(pkg_name, 1)
+                log(apk_file, 1)
                 if install_apk(INPUT_APK_FOLDER + apk_file):
                     if launch_apk(pkg_name):  
-                        pin_apk(pkg_name, INPUT_APKS_RESULT)  
+                        pin_apk(apk_file, pkg_name, INPUT_APKS_RESULT)  
                         uninstall_apk(pkg_name)
                 else:
                     fail_buffer = fail_buffer + str(apk_file) + " - install failed\n"
@@ -146,10 +146,10 @@ def parse_csv():
         for apks in input_failed_list:
             pkg_name = get_package_name(INPUT_APK_FOLDER + apks)
             if pkg_name:
-                log(pkg_name, 1)
+                log(apks, 1)
                 if install_apk(INPUT_APK_FOLDER + apks):
                     if launch_apk(pkg_name):  
-                        pin_apk(pkg_name, INPUT_APKS_RESULT)  
+                        pin_apk(apk_file, pkg_name, INPUT_APKS_RESULT)  
                         uninstall_apk(pkg_name)
 
 
@@ -177,10 +177,10 @@ def parse_csv():
             # Command to get package name of the app from its apk.
             pkg_name = get_package_name(MODIFIED_APK_FOLDER + apk_file)
             if pkg_name:
-                log(pkg_name, 1)
+                log(apk_file, 1)
                 if install_apk(MODIFIED_APK_FOLDER + apk_file):
                     if launch_apk(pkg_name):  
-                        pin_apk(pkg_name, MODIFIED_APKS_RESULT)  
+                        pin_apk(apk_file, pkg_name, MODIFIED_APKS_RESULT)  
                         uninstall_apk(pkg_name)
                 else:
                     fail_buffer = fail_buffer + str(apk_file) + " - install failed\n"
@@ -192,10 +192,10 @@ def parse_csv():
         for apks in modified_failed_list:
             pkg_name = get_package_name(MODIFIED_APK_FOLDER + apks)
             if pkg_name:
-                log(pkg_name, 1)
+                log(apks, 1)
                 if install_apk(MODIFIED_APK_FOLDER + apks):
                     if launch_apk(pkg_name):  
-                        pin_apk(pkg_name, MODIFIED_APKS_RESULT)  
+                        pin_apk(apk_file, pkg_name, MODIFIED_APKS_RESULT)  
                         uninstall_apk(pkg_name)
 
     #remove apk folder
@@ -249,8 +249,8 @@ def install_apk(apk):
     try:
         app_install_proc = subprocess.Popen(APP_INSTALL_CMD + apk,
             stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
-        app_installation_status, err = app_install_proc.communicate(timeout=20)
-        sleep(3)
+        app_installation_status, err = app_install_proc.communicate(timeout=30)
+        sleep(15)
 
         if "Success" in str(app_installation_status):
             log("        APK installed", PRINT_TO_SCREEN)
@@ -305,7 +305,7 @@ def launch_apk(package_name):
 
         pid_proc = subprocess.Popen('adb shell pidof ' + package_name,
             stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
-        pid_proc_stdout, err = pid_proc.communicate(timeout=10)
+        pid_proc_stdout, err = pid_proc.communicate(timeout=40)
         pid = pid_proc_stdout.decode()
         err = err.decode()
 
@@ -326,7 +326,7 @@ def launch_apk(package_name):
 
     return 1
 
-def pin_apk(package_name, log_folder):
+def pin_apk(apk_file, package_name, log_folder):
     """ To pin apk in emulator
         Arguments  : package_name - name of apk to be launched
         Returns    : return code for success/failure
@@ -343,13 +343,13 @@ def pin_apk(package_name, log_folder):
     # Command to terminate app.
     app_terminate_command = 'adb shell am force-stop '
 
-    monkey_file = " > " + log_folder + package_name + ".txt"
+    monkey_file = " > " + log_folder + apk_file.replace("_A", "") + ".txt"
 
     log("        Pinning APK : " + package_name, 0)
     app_task_id_proc = subprocess.Popen(app_task_id_command_temp, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
     (app_task_id_status, err) = app_task_id_proc.communicate()
     app_task_id_temp = app_task_id_status.decode()
-    sleep(3)
+    sleep(5)
 
     if "#" in app_task_id_temp:
         app_task_id = app_task_id_temp[1:-1]
@@ -372,10 +372,10 @@ def pin_apk(package_name, log_folder):
             # Gets PID after monitoring.
             pid_proc = subprocess.Popen('adb shell pidof ' + package_name,
             stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
-            pid_proc_stdout, err = pid_proc.communicate(timeout=10)
+            pid_proc_stdout, err = pid_proc.communicate(timeout=20)
             pid = pid_proc_stdout.decode()
             #print("Need to account for pid variation")	
-            sleep(3)	
+            sleep(5)	
 
             # Runs the command in the device shell to unpin the app from the screen.
             app_unpin_proc = subprocess.Popen(app_unpin_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
