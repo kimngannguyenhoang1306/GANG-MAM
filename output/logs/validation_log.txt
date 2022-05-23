@@ -1,0 +1,32 @@
+2022-03-22 15:36:36,938 Emulator is specified.
+2022-03-22 15:36:36,938 Checking emulator is in path...
+2022-03-22 15:36:36,977 Emulator found in PATH
+2022-03-22 15:36:36,977 Emulator found: Android emulator version 31.2.8.0 (build_id 8143646) (CL:N/A)
+Copyright (C) 2006-2017 The Android Open Source Project and many others.
+This program is a derivative of the QEMU CPU emulator (www.qemu.org).
+
+  This software is licensed under the terms of the GNU General Public
+  License version 2, as published by the Free Software Foundation, and
+  may be copied, distributed, and modified under those terms.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+
+2022-03-22 15:36:36,977 Checking aapt is in path...
+2022-03-22 15:36:36,983 Aapt found in PATH
+2022-03-22 15:36:36,983 Aapt found Android Asset Packaging Tool, v0.2-debian
+
+2022-03-22 15:36:36,983 Checking if emulator A81 is available...
+2022-03-22 15:36:36,991 Emulator A81 found
+2022-03-22 15:36:36,991 ADB found
+2022-03-22 15:36:42,000 Killing adb:  
+cannot connect to daemon at tcp:5037: Connection refused
+
+2022-03-22 15:36:47,687 Starting adb:  
+* daemon not running; starting now at tcp:5037
+* daemon started successfully
+
+2022-03-22 15:36:47,687 Launching android emulator

@@ -1,0 +1,132 @@
+2022-03-22 15:35:13,112 Apktool 2.5.0 found
+2022-03-22 15:35:13,112 Decoding APKs
+2022-03-22 15:35:27,842     Decoded Aptoide_v9.20.3.0_apkpure.com.apk
+2022-03-22 15:35:33,353     Decoded HappyMod_v2.7.4_apkpure.com.apk
+2022-03-22 15:35:43,427     Decoded Auto Clicker Automatic tap_v1.6.1_apkpure.com.apk
+2022-03-22 15:35:43,455 Error..
+2022-03-22 15:35:43,455 STDOUT: 
+2022-03-22 15:35:43,455 STDERR: ./static_code_capturing.sh: line 4: $1/Static_Features.txt: ambiguous redirect
+./static_code_capturing.sh: line 5: $1/Static_Features.txt: ambiguous redirect
+grep: ./../../output/apks/Auto: No such file or directory
+grep: Clicker: No such file or directory
+grep: Automatic: No such file or directory
+grep: tap_v1.6.1_apkpure.com_A/AndroidManifest.xml: No such file or directory
+./static_code_capturing.sh: line 6: $1/Static_Features.txt: ambiguous redirect
+./static_code_capturing.sh: line 9: $1/Static_Features.txt: ambiguous redirect
+./static_code_capturing.sh: line 10: $1/Static_Features.txt: ambiguous redirect
+grep: ./../../output/apks/Auto: No such file or directory
+grep: Clicker: No such file or directory
+grep: Automatic: No such file or directory
+grep: tap_v1.6.1_apkpure.com_A/AndroidManifest.xml: No such file or directory
+./static_code_capturing.sh: line 11: $1/Static_Features.txt: ambiguous redirect
+./static_code_capturing.sh: line 14: $1/Static_Features.txt: ambiguous redirect
+./static_code_capturing.sh: line 15: $1/Static_Features.txt: ambiguous redirect
+grep: ./../../output/apks/Auto: No such file or directory
+grep: Clicker: No such file or directory
+grep: Automatic: No such file or directory
+grep: tap_v1.6.1_apkpure.com_A/AndroidManifest.xml: No such file or directory
+./static_code_capturing.sh: line 16: $1/Static_Features.txt: ambiguous redirect
+./static_code_capturing.sh: line 19: $1/Static_Features.txt: ambiguous redirect
+./static_code_capturing.sh: line 20: $1/Static_Features.txt: ambiguous redirect
+grep: ./../../output/apks/Auto: No such file or directory
+grep: Clicker: No such file or directory
+grep: Automatic: No such file or directory
+grep: tap_v1.6.1_apkpure.com_A/AndroidManifest.xml: No such file or directory
+./static_code_capturing.sh: line 21: $1/Static_Features.txt: ambiguous redirect
+./static_code_capturing.sh: line 24: $1/Static_Features.txt: ambiguous redirect
+./static_code_capturing.sh: line 25: $1/Static_Features.txt: ambiguous redirect
+grep: ./../../output/apks/Auto: No such file or directory
+grep: Clicker: No such file or directory
+grep: Automatic: No such file or directory
+grep: tap_v1.6.1_apkpure.com_A/AndroidManifest.xml: No such file or directory
+./static_code_capturing.sh: line 26: $1/Static_Features.txt: ambiguous redirect
+./static_code_capturing.sh: line 29: $1/Static_Features.txt: ambiguous redirect
+./static_code_capturing.sh: line 30: $1/Static_Features.txt: ambiguous redirect
+grep: ./../../output/apks/Auto: No such file or directory
+grep: Clicker: No such file or directory
+grep: Automatic: No such file or directory
+grep: tap_v1.6.1_apkpure.com_A/AndroidManifest.xml: No such file or directory
+./static_code_capturing.sh: line 31: $1/Static_Features.txt: ambiguous redirect
+./static_code_capturing.sh: line 34: $1/Static_Features.txt: ambiguous redirect
+./static_code_capturing.sh: line 35: $1/Static_Features.txt: ambiguous redirect
+grep: ./../../output/apks/Auto: No such file or directory
+grep: Clicker: No such file or directory
+grep: Automatic: No such file or directory
+grep: tap_v1.6.1_apkpure.com_A/AndroidManifest.xml: No such file or directory
+./static_code_capturing.sh: line 36: $1/Static_Features.txt: ambiguous redirect
+./static_code_capturing.sh: line 39: $1/Static_Features.txt: ambiguous redirect
+./static_code_capturing.sh: line 40: $1/Static_Features.txt: ambiguous redirect
+grep: ./../../output/apks/Auto: No such file or directory
+grep: Clicker: No such file or directory
+grep: Automatic: No such file or directory
+grep: tap_v1.6.1_apkpure.com_A/AndroidManifest.xml: No such file or directory
+./static_code_capturing.sh: line 41: $1/Static_Features.txt: ambiguous redirect
+./static_code_capturing.sh: line 44: $1/Static_Features.txt: ambiguous redirect
+grep: ./../../output/apks/Auto: No such file or directory
+grep: Clicker: No such file or directory
+grep: Automatic: No such file or directory
+grep: tap_v1.6.1_apkpure.com_A/AndroidManifest.xml: No such file or directory
+./static_code_capturing.sh: line 45: $1/Static_Features.txt: ambiguous redirect
+./static_code_capturing.sh: line 46: $1/Static_Features.txt: ambiguous redirect
+./static_code_capturing.sh: line 49: $1/Static_Features.txt: ambiguous redirect
+./static_code_capturing.sh: line 50: $1/Static_Features.txt: ambiguous redirect
+grep: ./../../output/apks/Auto: No such file or directory
+grep: Clicker: No such file or directory
+grep: Automatic: No such file or directory
+grep: tap_v1.6.1_apkpure.com_A/AndroidManifest.xml: No such file or directory
+./static_code_capturing.sh: line 51: $1/Static_Features.txt: ambiguous redirect
+./static_code_capturing.sh: line 54: $1/Static_Features.txt: ambiguous redirect
+./static_code_capturing.sh: line 55: $1/Static_Features.txt: ambiguous redirect
+grep: ./../../output/apks/Auto: No such file or directory
+grep: Clicker: No such file or directory
+grep: Automatic: No such file or directory
+grep: tap_v1.6.1_apkpure.com_A/AndroidManifest.xml: No such file or directory
+./static_code_capturing.sh: line 56: $1/Static_Features.txt: ambiguous redirect
+./static_code_capturing.sh: line 59: $1/Static_Features.txt: ambiguous redirect
+./static_code_capturing.sh: line 60: $1/Static_Features.txt: ambiguous redirect
+grep: ./../../output/apks/Auto: No such file or directory
+grep: Clicker: No such file or directory
+grep: Automatic: No such file or directory
+grep: tap_v1.6.1_apkpure.com_A/AndroidManifest.xml: No such file or directory
+./static_code_capturing.sh: line 61: $1/Static_Features.txt: ambiguous redirect
+./static_code_capturing.sh: line 64: $1/Static_Features.txt: ambiguous redirect
+./static_code_capturing.sh: line 65: $1/Static_Features.txt: ambiguous redirect
+find: ‘./../../output/apks/Auto’: No such file or directory
+find: ‘Clicker’: No such file or directory
+find: ‘Automatic’: No such file or directory
+find: ‘tap_v1.6.1_apkpure.com_A/’: No such file or directory
+./static_code_capturing.sh: line 66: $1/Static_Features.txt: ambiguous redirect
+./static_code_capturing.sh: line 69: $1/Static_Features.txt: ambiguous redirect
+./static_code_capturing.sh: line 70: $1/Static_Features.txt: ambiguous redirect
+find: ‘./../../output/apks/Auto’: No such file or directory
+find: ‘Clicker’: No such file or directory
+find: ‘Automatic’: No such file or directory
+find: ‘tap_v1.6.1_apkpure.com_A/*’: No such file or directory
+./static_code_capturing.sh: line 71: $1/Static_Features.txt: ambiguous redirect
+./static_code_capturing.sh: line 74: $1/Static_Features.txt: ambiguous redirect
+./static_code_capturing.sh: line 75: $1/Static_Features.txt: ambiguous redirect
+find: ‘./../../output/apks/Auto’: No such file or directory
+find: ‘Clicker’: No such file or directory
+find: ‘Automatic’: No such file or directory
+find: ‘tap_v1.6.1_apkpure.com_A/*’: No such file or directory
+./static_code_capturing.sh: line 76: $1/Static_Features.txt: ambiguous redirect
+./static_code_capturing.sh: line 79: $1/Static_Features.txt: ambiguous redirect
+./static_code_capturing.sh: line 80: $1/Static_Features.txt: ambiguous redirect
+find: ‘./../../output/apks/Auto’: No such file or directory
+find: ‘Clicker’: No such file or directory
+find: ‘Automatic’: No such file or directory
+find: ‘tap_v1.6.1_apkpure.com_A/*’: No such file or directory
+./static_code_capturing.sh: line 81: $1/Static_Features.txt: ambiguous redirect
+./static_code_capturing.sh: line 84: $1/Static_Features.txt: ambiguous redirect
+./static_code_capturing.sh: line 85: $1/Static_Features.txt: ambiguous redirect
+du: cannot access './../../output/apks/Auto': No such file or directory
+du: cannot access 'Clicker': No such file or directory
+du: cannot access 'Automatic': No such file or directory
+du: cannot access 'tap_v1.6.1_apkpure.com_A/': No such file or directory
+./static_code_capturing.sh: line 86: $1/Static_Features.txt: ambiguous redirect
+
+2022-03-22 15:35:43,455 RETURN: 1
+2022-03-22 15:35:43,455     3 files decoded
+2022-03-22 15:35:43,455     Creating temp files for storing the static features
+2022-03-22 15:35:43,458     Generating the csv file
+2022-03-22 15:35:43,459     Removing temp files used for storing the static features
